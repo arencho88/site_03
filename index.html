@@ -4,333 +4,266 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Site_03</title>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-	<header id="hd" class="header">
-		<div class="container">
-			<div class="header__inner">
-				<div class="header__top">
-					<a class="header__logo" href="#">
-						<img src="img/header_logo.svg" alt="">
-						<p>MartaUP</p>
-					</a>
-					<div class="header__menu__btn" href="#">
-						<span></span>
-					</div>
-					<nav class="header__nav">
-						<div class="header__nav__inner">
-							<ul>
-								<li><a href="#hd">Home</a></li>
-								<li><a href="#wo">Work</a></li>
-								<li><a href="#ab">About</a></li>
-								<li><a href="#foot">Contact</a></li>
-							</ul>
-						</div>
-					</nav>
-					<div class="header__btn">
-						<button class="header__btn-login">
-							Login
-						</button>
-						<button class="header__btn-signup">
-							Sign Up
-						</button>
-					</div>
-				</div>
-
-				<div class="header__slider">
-					<div class="slider__items">
-						<div class="slider__item">
-							<div class="slider__text">
-								<h1>We Build Apps & Websites for Your Business</h1>
-								<p>For startups, For businesses & For you</p>
-								<button>Request a quote</button>
-							</div>
-							<div class="slider__img">
-								<img src="img/header_slider.svg" alt="">
-							</div>
-						</div>
-						<div class="slider__item">
-							<div class="slider__text">
-								<h1>We Build Apps & Websites for Your Business</h1>
-								<p>For startups, For businesses & For you</p>
-								<button>Request a quote</button>
-							</div>
-							<div class="slider__img">
-								<img src="img/header_slider.svg" alt="">
-							</div>
-						</div>
-						<div class="slider__item">
-							<div class="slider__text">
-								<h1>We Build Apps & Websites for Your Business</h1>
-								<p>For startups, For businesses & For you</p>
-								<button>Request a quote</button>
-							</div>
-							<div class="slider__img">
-								<img src="img/header_slider.svg" alt="">
-							</div>
-						</div>
-						<div class="slider__item">
-							<div class="slider__text">
-								<h1>We Build Apps & Websites for Your Business</h1>
-								<p>For startups, For businesses & For you</p>
-								<button>Request a quote</button>
-							</div>
-							<div class="slider__img">
-								<img src="img/header_slider.svg" alt="">
-							</div>
-						</div>
-						<div class="slider__item">
-							<div class="slider__text">
-								<h1>We Build Apps & Websites for Your Business</h1>
-								<p>For startups, For businesses & For you</p>
-								<button>Request a quote</button>
-							</div>
-							<div class="slider__img">
-								<img src="img/header_slider.svg" alt="">
-							</div>
-						</div>
-					</div>
-				</div> 
-			</div>
+	<header class="header">
+		<div class="header__logo logo">
+			<a href="#">
+				<img src="images/header_logo.svg" alt="logotype">
+			</a>
 		</div>
+		<nav class="header__menu">
+			<ul class="header__menu-list">
+				<li><a class="header__menu-list-link active" href="#">О нас</a></li>
+				<li><a class="header__menu-list-link" href="#">Дома</a></li>
+				<li><a class="header__menu-list-link" href="#">Квартиры</a></li>
+				<li><a class="header__menu-list-link" href="#">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	
-	<section id="ab" class="about">
+	<section class="slider">
+		<div class="slider-item" style="background-image: url(images/slider_item-bg.jpg);"></div>
+		<div class="slider-item" style="background-image: url(images/slider_item-bg.jpg);"></div>
+		<div class="slider-item" style="background-image: url(images/slider_item-bg.jpg);"></div>
+	</section>
+
+	<section class="search">
+		<div class="search__inner">
+			<form class="search__form">
+				<label class="search__form-label" for="search">Поиск Аппартаментов</label>
+				<input class="search__form-input" id="search" type="text" placeholder="Введите город">
+				<button class="search__form-btn" type="submit">Найти</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="popular">
+		<h2 class="popular__title">Самые популярные варианты</h2>
+		<div class="container">
+			<div class="popular__inner">
+				<div class="popular-item">
+					<img src="images/popular_img-1.jpg" alt="">
+					<h5 class="popular-item-title">Аппартаменты<br> Москва</h5>
+					<a href="#">детали</a>
+				</div>
+				<div class="popular-item">
+					<img src="images/popular_img-2.jpg" alt="">
+					<h5 class="popular-item-title">Аппартаменты<br> Киев</h5>
+					<a href="#">детали</a>
+				</div>
+				<div class="popular-item">
+					<img src="images/popular_img-3.jpg" alt="">
+					<h5 class="popular-item-title">Коттедж Moddern<br> Лос Анджелес</h5>
+					<a href="#">детали</a>
+				</div>
+				<div class="popular-item">
+					<img src="images/popular_img-4.jpg" alt="">
+					<h5 class="popular-item-title">Коттедж Семейный<br> Лондон</h5>
+					<a href="#">детали</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reason">
+		<div class="container">
+			<div class="reason__inner">
+				<div class="reason-item">
+					<h4 class="reason-item-title">
+						Мы экономим
+						Ваше время и Ваши
+						деньги
+					</h4>
+					<p class="reason-item-text">
+						Вы можете легко подобрать себе самую лучшую недвижимость для аренды на нашем сайте по выгодной цене.
+						Наши менеджеры с удовольствием помогут Вам и ответят на все вопросы.
+					</p>
+					<a class="reason-item-link" href="#">Подробнее</a>
+				</div>
+				<div class="reason-item">
+					<h4 class="reason-item-title">
+						Арендуйте лучшую недвижимость в крупных городах
+					</h4>
+					<p class="reason-item-text">
+						Наша база элитной недвижимости насчитывает более 5000 вариантов в крупных городах мира.Мы поможем Вам
+						выбрать самую лучшую, также предоставим дополнительный сервис
+					</p>
+					<a class="reason-item-link" href="#">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cottage" style="background-image: url(images/cottage_img.jpg);">
+		<div class="container">
+			<div class="cottage__inner">
+				<h3 class="cottage__title">
+					Коттедж Modern
+					Лос Анджелес
+				</h3>
+				<a href="#" class="cottage__link">Забронировать</a>
+			</div>
+		</div>
+	</section>
+ 
+	<section class="about">
 		<div class="container">
 			<div class="about__inner">
-				<h2>We are specialised in</h2>
-				<div class="about__items">
-					<div class="about__item__wrap">
-						<div class="about__item">
-							<img src="img/about_UI.svg" alt="">
-							<h3>UI/UX Design</h3>
-							<p>
-								In hac habitasse platea dictumstmus adipiscing fermentum quam volutpat aliquam. Integer
-								cilisis tristique.
-							</p>
+				<div class="about__our-managers">
+					<h4 class="our-managers-title about-block-title">
+						Наши
+						менеджеры
+					</h4>
+					<div class="our-managers-items">
+						<div class="our-managers-item">
+							<img class="our-managers-item-img" src="images/about_manager-img-1.jpg" alt="">
+							<ul class="our-managers-item-list">
+								<li class="our-managers-item-name">
+									Макс
+								</li>
+								<li class="our-managers-item-age">
+									30 лет
+								</li>
+								<li class="our-managers-item-location">
+									Москва
+								</li>
+							</ul>
+							<button class="our-managers-item-btn" href="#">Связаться</button>
+						</div>
+						<div class="our-managers-item">
+							<img class="our-managers-item-img" src="images/about_manager-img-2.jpg" alt="">
+							<ul class="our-managers-item-list">
+								<li class="our-managers-item-name">
+									Анна
+								</li>
+								<li class="our-managers-item-age">
+									28 лет
+								</li>
+								<li class="our-managers-item-location">
+									Киев
+								</li>
+							</ul>
+							<button class="our-managers-item-btn" href="#">Связаться</button>
 						</div>
 					</div>
-					<div class="about__item__wrap">
-						<div class="about__item">
-							<img src="img/about_web.svg" alt="">
-							<h3>Web Development</h3>
-							<p>
-								In hac habitasse platea dictumstmus adipiscing fermentum quam volutpat aliquam. Integer
-								cilisis tristique.
-							</p>
-						</div>
-					</div>
-					<div class="about__item__wrap">
-						<div class="about__item">
-							<img src="img/about_app.svg" alt="">
-							<h3>App Development</h3>
-							<p>
-								In hac habitasse platea dictumstmus adipiscing fermentum quam volutpat aliquam. Integer
-								cilisis tristique.
-							</p>
-						</div>
-					</div>
+				</div>
+				<div class="about__blog">
+					<h4 class="about__blog-title about-block-title">
+						Блог
+					</h4>
+					<ul class="about__blog-list">
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Системы охраны и видеонаблюдения
+							</a>
+						</li>
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Клубная недвижимость всегда в цене
+							</a>
+						</li>
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Все плюсы от посуточной аренды квартир
+							</a>
+						</li>
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Как выбрать жильё своей мечты в Киеве?
+							</a>
+						</li>
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Топ 10 ВИП коттеджей Лос Анджелеса
+							</a>
+						</li>
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Лучшие аппартаменты с панорамным видом
+							</a>
+						</li>
+						<li class="blog-list-item">
+							<a class="blog-list-link" href="#">
+								Дома для аренды на год в Майами
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="about__reviews">
+					<h4 class="about__reviews-title about-block-title">
+						Отзывы
+					</h4>
+					<img src="images/about_reviews-img.jpg" alt="" class="about__reviews-img">
+					<p class="about__reviews-text">
+						Это лучший сервис по подбору
+						аппартаментов. Пользуюсь услугами To rent уже 5 лет. Всегда идеально и именно то, что мне нужно.
+					</p>
+					<a href="#" class="about__reviews-btn">Еще отзывы</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="wo" class="work">
-		<div class="container">
-			<div class="work__items">
-				<div class="work__item">
-					<div class="work__item__info">
-						<h4>Experienced Designers & Developers</h4>
-						<p>
-							Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
-							neque sem pretium metus, quis mollis nisl nunc et massa.
-						</p>
-						<span>Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.</span>
-					</div>
-					<div class="work__item__img">
-						<img src="img/work_designer.svg" alt="">
-					</div>
-				</div>
-				<div class="work__item">
-					<div class="work__item__info__mob">
-						<h4>Information Architect & Visual Prototyping</h4>
-						<p>
-							Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
-							neque sem pretium metus, quis mollis nisl nunc et massa.
-						</p>
-						<span>
-							Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien
-							sollicitudin lacinia lacinia. Nam dapibus nisl vitae elit fringilla rutrum. Aenean
-							sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et
-							massa
-						</span>
-					</div>
-					<div class="work__item__img">
-						<img src="img/work_info.svg" alt="">
-					</div>
-					<div class="work__item__info">
-						<h4>Information Architect & Visual Prototyping</h4>
-						<p>
-							Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
-							neque sem pretium metus, quis mollis nisl nunc et massa.
-						</p>
-						<span>
-							Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien
-							sollicitudin lacinia lacinia. Nam dapibus nisl vitae elit fringilla rutrum. Aenean
-							sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et
-							massa
-						</span>
-					</div>
-				</div>
-				<div class="work__item">
-					<div class="work__item__info">
-						<h4>Idea Generation & Foundation</h4>
-						<p>
-							Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
-							neque sem pretium metus, quis mollis nisl nunc et massa. Nam dapibus nisl vitae elit
-							fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus,
-							quis mollis nisl nunc et massa
-						</p>
-					</div>
-					<div class="work__item__img">
-						<img src="img/work_idea.svg" alt="">
-					</div>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer__top__inner">
+					<nav class="footer__top-menu">
+						<ul class="footer__top-menu-list">
+							<li class="top-menu-item">
+								<a class="top-menu-link" href="#">
+									О нас
+								</a>
+							</li>
+							<li class="top-menu-item">
+								<a class="top-menu-link" href="#">
+									Дома
+								</a>
+							</li>
+							<li class="top-menu-item">
+								<a class="top-menu-link" href="#">
+									Аппартаменты
+								</a>
+							</li>
+							<li class="top-menu-item">
+								<a class="top-menu-link" href="#">
+									Отзывы
+								</a>
+							</li>
+							<li class="top-menu-item">
+								<a class="top-menu-link" href="#">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<form class="footer__top-form">
+						<label class="footer__top-form-label" for="footer-inp">Связаться с нами</label>
+						<input class="footer__top-form-input" id="footer-inp" type="text" placeholder="Задать вопрос">
+						<button class="footer__top-form-btn" type="submit">Отправить</button>
+					</form>
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<section id="rev" class="reviews">
-		<div class="container">
-			<h4>Don’t Just Take Our Words</h4>
-			<div class="reviews__slider__items">
-				<div class="reviews__slider__item">
-					<div class="reviews__slider__item__top">
-						<img src="img/reviews_arakat.jpg" alt="">
-						<div class="reviews__slider__item__name">
-							<span>Arakat Bank</span>
-							<span>International Bank Ltd.</span>
-						</div>
-					</div>
-					<span>,,</span>
-					<div class="reviews__slider__item__text">
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
-							vitae ullamcorper metus. Sed sollicitudin ipsum.
-						</p>
-					</div>
-				</div>
-				<div class="reviews__slider__item">
-					<div class="reviews__slider__item__top">
-						<img src="img/reviews_christopher.jpg" alt="">
-						<div class="reviews__slider__item__name">
-							<span>Chrsitopher Company Ltd.</span>
-							<span>Design & Development</span>
-						</div>
-					</div>
-					<span>,,</span>
-					<div class="reviews__slider__item__text">
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
-							vitae ullamcorper metus. Sed sollicitudin ipsum.
-						</p>
-					</div>
-				</div>
-				<div class="reviews__slider__item">
-					<div class="reviews__slider__item__top">
-						<img src="img/reviews_jig.jpg" alt="">
-						<div class="reviews__slider__item__name">
-							<span>Jigsawlab Studio Inc.</span>
-							<span>Interactive</span>
-						</div>
-					</div>
-					<span>,,</span>
-					<div class="reviews__slider__item__text">
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
-							vitae ullamcorper metus. Sed sollicitudin ipsum.
-						</p>
-					</div>
-				</div>
-				<div class="reviews__slider__item">
-					<div class="reviews__slider__item__top">
-						<img src="img/reviews_arakat.jpg" alt="">
-						<div class="reviews__slider__item__name">
-							<span>Arakat Bank</span>
-							<span>International Bank Ltd.</span>
-						</div>
-					</div>
-					<span>,,</span>
-					<div class="reviews__slider__item__text">
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
-							vitae ullamcorper metus. Sed sollicitudin ipsum.
-						</p>
-					</div>
-				</div>
-				<div class="reviews__slider__item">
-					<div class="reviews__slider__item__top">
-						<img src="img/reviews_christopher.jpg" alt="">
-						<div class="reviews__slider__item__name">
-							<span>Chrsitopher Company Ltd.</span>
-							<span>Design & Development</span>
-						</div>
-					</div>
-					<span>,,</span>
-					<div class="reviews__slider__item__text">
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
-							vitae ullamcorper metus. Sed sollicitudin ipsum.
-						</p>
-					</div>
-				</div>
-				<div class="reviews__slider__item">
-					<div class="reviews__slider__item__top">
-						<img src="img/reviews_jig.jpg" alt="">
-						<div class="reviews__slider__item__name">
-							<span>Jigsawlab Studio Inc.</span>
-							<span>Interactive</span>
-						</div>
-					</div>
-					<span>,,</span>
-					<div class="reviews__slider__item__text">
-						<p>
-							Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus,
-							vitae ullamcorper metus. Sed sollicitudin ipsum.
-						</p>
-					</div>
-				</div>
+		<div class="footer__bottom ">
+			<div class="footer__logo logo">
+				<a href="#">
+					<img src="images/header_logo.svg" alt="">
+				</a>
 			</div>
 		</div>
-	</section>
-
-	<footer id="foot" class="footer">
-		<div class="container">
-			<div class="footer__inner">
-				<div class="footer__left">
-					<a href="#">About Martaup</a>
-					<a href="#">Help</a>
-					<a href="#">Privacy Policy</a>
-				</div>
-				<div class="footer__right">
-					<span>© 2013-2018 All rights reserved.</span>
-				</div>
-			</div>
-		</div>
-	</footer>   
-
+	</footer> 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
-
 </html>
